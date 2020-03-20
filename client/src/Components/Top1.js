@@ -30,7 +30,7 @@ const Top1 = props => {
           label="Scale"
           defaultValue="Global"
           className="textWhite"
-          style={{ margin: "20px 40% 20px 10%", width: "50%" }}
+          style={{ margin: "0px 15% 0px 10%", width: "75%" }}
         />
         <TextField
           label="Total Cases"
