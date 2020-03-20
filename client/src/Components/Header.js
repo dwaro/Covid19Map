@@ -39,6 +39,15 @@ const Header = () => {
           <Typography variant="h6" color="inherit">
             Covid19 Map
           </Typography>
+          <div
+            style={{
+              position: "absolute",
+              right: 0,
+              margin: "0px 50px 20px 50px"
+            }}
+          >
+            Data last updated: {`${Date()}`}
+          </div>
         </Toolbar>
       </AppBar>
     </div>
