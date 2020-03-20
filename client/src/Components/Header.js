@@ -28,16 +28,16 @@ const Header = () => {
         }}
       >
         <Toolbar>
-          <IconButton
+          {/*}<IconButton
             edge="start"
             className={classes.menuButton}
             color="inherit"
             aria-label="menu"
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton>*/}
           <Typography variant="h6" color="inherit">
-            Covid19 Map
+            COVID-19 Map
           </Typography>
           <div
             style={{
