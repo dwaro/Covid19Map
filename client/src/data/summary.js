@@ -1,1 +1,1 @@
-module.exports = { Total: 242708, Recoveries: 84854, Deaths: 9867 };
+module.exports = {"Total":272166, "Recoveries":87256, "Deaths":11299}
