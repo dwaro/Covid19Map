@@ -75,6 +75,14 @@ body {
   border-bottom: 2px solid red !important;
 }
 
+.mapboxgl-canvas:hover {
+  cursor: pointer;
+}
+
+.mapboxgl-canvas:active {
+  cursor: grabbing;
+}
+
 @media screen and (max-width: 900px) {
   .mapContainer {
     top: 56;

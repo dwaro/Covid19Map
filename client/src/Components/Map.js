@@ -16,8 +16,14 @@ class Map extends Component {
       container: this.mapContainer,
       style: "mapbox://styles/jwaro/ck7zpupfu24gj1ipqawa4qvfd",
       center: [this.state.lng, this.state.lat],
-      zoom: this.state.zoom
+      zoom: this.state.zoom,
+      attributionControl: true,
+      doubleClickZoom: true,
+      accessToken:
+        "pk.eyJ1Ijoiandhcm8iLCJhIjoiY2s3emxsdWx0MDV6ZTNsbzJxMGpnZnZlayJ9.mtUeUNidHNndai6ovXvN_A"
     });
+
+    map.addControl(new mapbox.NavigationControl());
 
     map.on("move", () => {
       this.setState({
