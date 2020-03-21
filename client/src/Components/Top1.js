@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
+import Summary from "../data/summary";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -34,21 +35,21 @@ const Top1 = props => {
         />
         <TextField
           label="Total Cases"
-          defaultValue="250,000"
+          defaultValue={Summary.Total}
           variant="outlined"
           disabled
           style={{ margin: "10px 20% 10px 10%", width: "70%" }}
         />
         <TextField
           label="Recoveries"
-          defaultValue="100,000"
+          defaultValue={Summary.Recoveries}
           variant="outlined"
           disabled
           style={{ margin: "10px 20% 10px 10%", width: "70%" }}
         />
         <TextField
           label="Deaths"
-          defaultValue="10,000"
+          defaultValue={Summary.Deaths}
           variant="outlined"
           disabled
           style={{ margin: "10px 20% 10px 10%", width: "70%" }}

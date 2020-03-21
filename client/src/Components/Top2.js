@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
-import Total from "../data/total_cases";
+import Data from "../data/cases";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -41,7 +41,7 @@ const Top2 = props => {
       <List className={classes.root}>
         <li className={classes.listSection}>
           <ul className={classes.ul}>
-            {Total.map(location => (
+            {Data.map(location => (
               <ListItem
                 key={`${location.name}`}
                 style={{
@@ -53,12 +53,14 @@ const Top2 = props => {
                 <ListItemText
                   primary={
                     location.name === location.country
-                      ? `${location.name}` + ": " + `${location.total}`
-                      : `${location.name}` +
-                        "  (" +
-                        `${location.country}` +
-                        "): " +
-                        `${location.total}`
+                      ? "".concat(location.name, ": ", location.total)
+                      : "".concat(
+                          location.name,
+                          "  (",
+                          location.country,
+                          "): ",
+                          location.total
+                        )
                   }
                 />
               </ListItem>
