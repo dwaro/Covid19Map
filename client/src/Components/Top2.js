@@ -52,15 +52,16 @@ const Top2 = props => {
               >
                 <ListItemText
                   primary={
-                    location.name === location.country
-                      ? "".concat(location.name, ": ", location.total)
-                      : "".concat(
-                          location.name,
-                          "  (",
-                          location.country,
-                          "): ",
-                          location.total
-                        )
+                    <div>
+                      <span
+                        style={{
+                          fontWeight: "bold"
+                        }}
+                      >
+                        {location.name}
+                      </span>
+                      : {location.total}
+                    </div>
                   }
                 />
               </ListItem>

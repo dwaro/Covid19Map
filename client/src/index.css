@@ -54,6 +54,9 @@ body {
 
 .MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-shrink.MuiInputLabel-outlined.MuiFormLabel-filled {
   color: white;
+  background-color: rgb(40, 40, 40);
+  padding: 0px 5px 0px 3px;
+  font-weight: bold;
 }
 
 .MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-shrink.MuiFormLabel-filled {
