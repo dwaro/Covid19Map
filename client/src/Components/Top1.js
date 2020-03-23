@@ -77,27 +77,19 @@ class Top1 extends Component {
       >
         <form className={this.state.classes.root} noValidate autoComplete="off">
           <AutoComp onChange={this.updateCountry} onKeyPess={this.keyPressed} />
-          <TextField
-            label="Total Cases"
-            value={this.state.total}
-            variant="outlined"
-            disabled
-            style={{ margin: "10px 20% 10px 10%", width: "70%" }}
-          />
-          <TextField
-            label="Recoveries"
-            value={this.state.recoveries}
-            variant="outlined"
-            disabled
-            style={{ margin: "10px 20% 10px 10%", width: "70%" }}
-          />
-          <TextField
-            label="Deaths"
-            value={this.state.deaths}
-            variant="outlined"
-            disabled
-            style={{ margin: "10px 20% 10px 10%", width: "70%" }}
-          />
+          {[
+            ["Total Cases", this.state.total],
+            ["Recoveries", this.state.recoveries],
+            ["Deaths", this.state.deaths]
+          ].map(item => (
+            <TextField
+              label={item[0]}
+              value={item[1]}
+              variant="outlined"
+              disabled
+              style={{ margin: "10px 20% 10px 10%", width: "70%" }}
+            />
+          ))}
         </form>
       </div>
     );

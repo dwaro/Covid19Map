@@ -1,1 +1,1 @@
-module.exports = {Total:335955, Recoveries:97704, Deaths:14632, Time:"2020-03-23 00:39:37.866748 (CST)"}
+module.exports = {Total:335955, Recoveries:97704, Deaths:14632, Time:"2020-03-23 11:09:15.129034 (CST)"}
