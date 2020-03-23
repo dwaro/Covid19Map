@@ -1,1 +1,1 @@
-module.exports = {"Total":272166, "Recoveries":87256, "Deaths":11299}
+module.exports = {Total:335955, Recoveries:97704, Deaths:14632, Time:"2020-03-23 00:39:37.866748 (CST)"}

@@ -36,11 +36,11 @@ body {
 }
 
 .MuiInputBase-input.MuiInput-input {
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-shrink.MuiFormLabel-filled {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 /* text white overrides */
@@ -50,6 +50,18 @@ body {
 
 .MuiInputBase-input.MuiOutlinedInput-input {
   color: white;
+}
+
+.MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated {
+  color: white;
+}
+
+.MuiAutocomplete-popupIndicator {
+  color: white !important;
+}
+
+.MuiAutocomplete-clearIndicator {
+  color: white !important;
 }
 
 .MuiFormLabel-root.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-shrink.MuiInputLabel-outlined.MuiFormLabel-filled {

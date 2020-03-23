@@ -5,6 +5,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import Summary from "../data/summary";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -46,7 +47,7 @@ const Header = () => {
               margin: "0px 50px 20px 50px"
             }}
           >
-            Data last updated: {`${Date()}`}
+            Data last updated: {`${Summary.Time}`}
           </div>
         </Toolbar>
       </AppBar>
